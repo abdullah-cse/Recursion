@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Recursion
 {
     class Program
     {
-        public static int Fact(int number)
+         static int Fact(int number)
         {
             if (number == 1)
             {
@@ -18,6 +14,7 @@ namespace Recursion
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Factorial Calculation");
             Console.WriteLine("Enter a value to calculate Factorial");
             Console.WriteLine(Fact(Convert.ToInt32(Console.ReadLine())));
             Console.ReadLine();
